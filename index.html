@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Radio San Roque</title>
+        <!-- CSS Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+        <!-- Mi proyecto -->
+        <link rel="stylesheet" href="estilos.css">
+        <Script src="unidad7.js"></Script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <div id="NOMBRE">
+                <h1>RADIO SAN ROQUE</h1>
+            </div>
+            <nav id="BOTONERA">
+                <ul>
+                    <li><a href="#seleccionar1">Programacion</a></li>
+                    <li><a href="#seleccionar2">Destacado</a></li>
+                    <li><a href="#seleccionar3">Informacion +</a></li>
+                    <li><a href="#seleccionar35">Bootstrap</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="seleccionar1">
+            <div class="caja1-interna1">
+                <img src="imagenes/LOGO.jpg" alt="Logo Radio San Roque" class="ajustarimg">
+            </div>
+            <div class="caja2-interna1">
+                <h2>Programación destacada</h2>
+                <p class="bienvenida">✨ ¡Nos alegra que estés aquí! Esta es tu radio, tu espacio, tu voz. Bienvenid@ a Radio San Roque 🎙️</p>
+                <p>📻 En Radio San Roque te acompañamos desde temprano con la mejor energía, información y música.</p>
+                <p>🕖 7:00 - 9:00 AM: “Buenos días, San Roque” – noticias, clima y buena onda para arrancar el día.</p>
+                <p>🎶 9:00 - 13:00: “Melodías del mediodía” – éxitos del momento y clásicos que nunca fallan.</p>
+                <p>☀️ Por la tarde, seguimos con voces locales, entrevistas, novedades y la música que te gusta.</p>
+                <p>🎧 Donde cada voz cuenta y la música une. </p>
+                <p>📡 ¡Sintonizá tu mundo en Radio San Roque!</p>
+            </div>
+        </section>
+
+        <section id="seleccionar2">
+            <div class="caja1-interna2">
+                <h3>
+                <script>
+                    document.write( "GRACIAS POR RESPONDER " + NOMBRE ); 
+                </script>
+                </H3>
+                <SCRipt>
+                    document.write(" <h4>Tema sugerido:</h4> "+ TEMA );
+                    document.write("<h4>Canción de tu vida:</h4> " + CANCION );
+                    document.write("<h4>Desafío sugerido:</h4> " + DESAFIO );
+                    document.write(" <h4>Causa comunitaria:</h4> " + CAUSA );
+                    document.write( "<h4>Ideas de mejora:</h4> " + MEJORA );     
+                </SCRipt>
+                <p><a href="#seleccionar2" onclick="mostrarCaja2()">¿Lo que dicen nuestros oyentes?</a></p>
+            </div>
+            <div class="caja2-interna2">
+                <ARTicle id="Opinioness" style="display: none;">
+                    <h3>Lo que dicen nuestros oyentes</h3>
+                    <ul>
+                        <li>"La música de Radio San Roque es como un abrazo en la mañana." – María, 34 años</li>
+                        <li>"Gracias por alegrar mis días con las melodías perfectas." – Juan, 28 años</li>
+                        <li>"Radio San Roque siempre tiene lo que necesito para concentrarme y disfrutar." – Ana, 40 años</li>
+                    </ul>
+                    <p><a href="#seleccionar2" onclick="mostrarCaja3()">¿Recomendaciones de la Semana?</a></p>    
+                </ARTicle>
+            </div>
+            <div class="caja3-interna2">
+                <article id="Opinionesss" style="display: none;">
+                    <h3>Recomendaciones de la Semana</h3>
+                    <ul>
+                        <li> "Relájate con esta playlist instrumental para el mediodía."</li>
+                        <li> "El top 10 de canciones que marcan tendencia este mes."</li>
+                        <li> "¿Conoces esta banda local? Escúchala en nuestro próximo programa."</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section id="seleccionar3">
+            <div class="caja1-interna3">
+                <video class="video-ajustado" autoplay muted controls loop playsinline>
+                    <source src="videos/cajainterna2-1.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                </video>
+            </div>
+            <div class="caja2-interna3">
+                <img id="imagenElegida" src="" alt="Imagen seleccionada" style="display: none; width: 100%;">
+            </div>
+            <div class="caja3-interna3">
+                <video class="video-ajustado1" autoplay muted controls loop playsinline>
+                    <source src="videos/cajainterna2-3.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                </video>
+            </div>
+        </section>
+
+        <section id="seleccionar35">
+            <main class="container-fluid">
+                <article class="row" id="modo1-interna35">
+                    <div class="col-xl-4 col-md-6" id="caja1-modo1">
+                        <div class="p-4 bg-white rounded shadow-sm" >
+                            <h2 class="h4 mb-4 text-center">Contactanos</h2>
+                            <form action="seleccionar35">
+                                <div class="mb-2">
+                                    <label for="radio" class="form-label">Motivo</label>
+                                    <select id="radio" class="form-select form-select-sm" required>
+                                        <option value="">Seleccionar opción</option>
+                                        <option value="Programacion">Programación</option>
+                                        <option value="Preguntas">Preguntas</option>
+                                        <option value="Dudas">¿Dudas?</option>
+                                    </select>
+                                </div>
+                                <div class="mb-2">
+                                    <input type="text" class="form-control form-control-sm" placeholder="Nombre" name="nombre" required maxlength="20">
+                                </div>
+                                <div class="mb-2">
+                                    <input type="text" class="form-control form-control-sm" placeholder="Apellido" name="apellido" required maxlength="20">
+                                </div>
+                                <div class="mb-2">
+                                    <input type="date" class="form-control form-control-sm" name="fecha" min="1920-01-01" max="2025-12-31" required>
+                                </div>
+                                <div class="mb-2">
+                                    <input type="email" class="form-control form-control-sm" placeholder="Correo Electrónico" name="correo" required maxlength="30">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control form-control-sm" placeholder="Mensaje" name="mensaje" rows="1" required></textarea>
+                                </div>
+                                <div class="d-grid">
+                                    <input type="submit" value="Enviar Consulta">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-md-6" id="caja2-modo1">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                 📻 Historia de Radio San Roque
+                                </button>
+                              </h2>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Fundada con el espíritu de dar voz a la comunidad, Radio San Roque nació como un proyecto barrial que se convirtió en un símbolo local. Desde el corazón de San Roque, llevamos más de una década compartiendo historias, cultura y buena música.
+                                    Somos más que una emisora: somos la compañía en el desayuno, el fondo sonoro de la siesta, y el abrazo musical antes de dormir. 🌙✨
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                 🎧 Detrás del Micrófono
+                                </button>
+                              </h2>
+                              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">¿Quién está del otro lado de la radio? 🎙️ Gente común con una pasión extraordinaria: comunicar, acompañar y hacer vibrar a San Roque.
+                                    Desde los conductores hasta los técnicos, desde quien prepara el mate hasta quien te da los buenos días por el aire...
+                                    todo se hace con corazón
+                                    El estudio no es solo cables y consolas. Es risas, debates, ideas, y sí: a veces algún blooper también 😅. Pero eso es lo que nos hace reales.
+                                    En Radio San Roque, somos una gran familia… y vos también sos parte.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                 🤝 Compromiso con la Comunidad
+                                </button>
+                              </h2>
+                              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Apoyamos eventos locales, difundimos causas solidarias y brindamos un espacio a las voces que construyen un San Roque más justo, alegre y participativo.
+                                    Porque creemos que la radio no solo informa o entretiene: la radio transforma
+                                    ¡Gracias por estar del otro lado y ser parte de este viaje sonoro! 🌍🎶
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div> 
+                </article>
+                <article class="row" id="modo2-interna35">
+                    <div class="col-xl col-md-6" id="caja1-modo2">
+                        <div class="modo2-box">
+                            <h4>🎙️ Vos hacés la radio</h4>
+                            <p>Contanos tu historia, tu canción, tu barrio... ¡Todo tiene lugar acá!</p>
+                        </div>
+                    </div>
+                    <div class="col-xl col-md-6" id="caja2-modo2">
+                        <h4>📻 ¿Sabías que...?</h4>
+                        <p>La primera transmisión de radio fue en 1906 y ¡fue un concierto de Navidad!</p>
+                    </div>
+                    <div class="col-xl col-md-6" id="caja3-modo2">
+                        <h4>💬 Frase de la Semana</h4>
+                        <p>"Donde hay una radio, hay una voz que puede cambiar el mundo."</p>
+                    </div>
+                    <div class="col-xl col-md-6" id="caja4-modo2">
+                        <h4>🎧 Curiosidad Sonora</h4>
+                        <p>El oído humano detecta desde 20 Hz hasta 20.000 Hz. ¡Un rango espectacular!</p>
+                    </div>
+                </article>
+            </main>
+        </section>
+      
+        <footer>
+            <div class="caja1-interna4">
+                <p>&copy; 2025 Radio San Roque. Todos los derechos reservados.</p>
+            </div>
+            <div class="caja2-interna4">
+                <h4>📞 Contacto</h4>
+                <ul class="contacto-lista">
+                    <li>Email: radiosanroque@email.com</li>
+                    <li>Teléfono: +54 261-333333</li>
+                </ul>
+            </div>
+            <div class="caja3-interna4">
+                <p><a href="#seleccionar3" onclick="mostrarPreguntas(event)">¡ES AHORA! Selecciona tu género musical</a></p>
+            </div>
+        </footer>
+    <script src="unidad8.js"></script>   
+
+    <!-- js  Bootrstap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    </body>
+</html>
